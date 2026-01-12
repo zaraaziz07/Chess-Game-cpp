@@ -8,6 +8,6 @@ Features include checkmate, stalemate detection, file saving/loading, and intera
 - 🎨 Interactive pieces with smooth graphics
 - ## 🏁 Chess Board Preview
  <p align="center">
-  <img src="assests/Screenshots/Chess_Board.PNG" alt="Chess Board" width="500"/>
+  <img src="assets/Screenshots/Chess_Board.PNG" alt="Chess Board" width="500"/>
 </p>
 
