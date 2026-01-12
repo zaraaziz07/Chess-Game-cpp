@@ -6,4 +6,8 @@ Features include checkmate, stalemate detection, file saving/loading, and intera
 - 🏁 Detects checkmate and stalemate
 - 💾 Save and load your game progress (file handling)
 - 🎨 Interactive pieces with smooth graphics
-  
+- ## 🏁 Chess Board Preview
+ <p align="center">
+  <img src="assests/Screenshots/Chess_Board.PNG" alt="Chess Board" width="500"/>
+</p>
+
