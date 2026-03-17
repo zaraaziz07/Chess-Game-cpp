@@ -88,18 +88,18 @@ using namespace std;
     void chess_pieces()
     {
         // Load textures
-        king1Texture.loadFromFile("images/king1.png");
-        king2Texture.loadFromFile("images/king2.png");
-        queen1Texture.loadFromFile("images/queen1.png");
-        queen2Texture.loadFromFile("images/queen2.png");
-        rook1Texture.loadFromFile("images/rook1.jpg");
-        rook2Texture.loadFromFile("images/rook2.jpg");
-        bishop1Texture.loadFromFile("images/bishop1.png");
-        bishop2Texture.loadFromFile("images/bishop2.png");
-        knight1Texture.loadFromFile("images/knight1.png");
-        knight2Texture.loadFromFile("images/knight2.png");
-        pawn1Texture.loadFromFile("images/pawn1.png");
-        pawn2Texture.loadFromFile("images/pawn2.png");
+     king1Texture.loadFromFile("assets/Chess_pieces/king1.png");
+king2Texture.loadFromFile("assets/Chess_pieces/king2.png");
+queen1Texture.loadFromFile("assets/Chess_pieces/queen1.png");
+queen2Texture.loadFromFile("assets/Chess_pieces/queen2.png");
+rook1Texture.loadFromFile("assets/Chess_pieces/rook1.jpg");
+rook2Texture.loadFromFile("assets/Chess_pieces/rook2.jpg");
+bishop1Texture.loadFromFile("assets/Chess_pieces/bishop1.png");
+bishop2Texture.loadFromFile("assets/Chess_pieces/bishop2.png");
+knight1Texture.loadFromFile("assets/Chess_pieces/knight1.png");
+knight2Texture.loadFromFile("assets/Chess_pieces/knight2.png");
+pawn1Texture.loadFromFile("assets/Chess_pieces/pawn1.png");
+pawn2Texture.loadFromFile("assets/Chess_pieces/pawn2.png");
 
         // Set textures
         king1.setTexture(king1Texture);
@@ -1283,10 +1283,16 @@ int main()
 
     // Load font for labels
     sf::Font font;
+if (!font.loadFromFile("assets/arial.ttf"))
+{
     if (!font.loadFromFile("C:/Windows/Fonts/arial.ttf"))
     {
-        cout << "Error loading font!" << endl;
+        if (!font.loadFromFile("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"))
+        {
+            cout << "Warning: Could not load font. Labels will not display." << endl;
+        }
     }
+}
 
     // Initialize selected piece highlight
     selectedHighlight.setSize(sf::Vector2f(75, 75));
