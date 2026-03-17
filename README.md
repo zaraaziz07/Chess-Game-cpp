@@ -10,6 +10,7 @@ Features include checkmate, stalemate detection, file saving/loading, and intera
  <p align="center">
   <img src="assets/Screenshots/Chess_Board.PNG" alt="Chess Board" width="500"/>
 </p>
+
 ## Prerequisites
 
 This project requires SFML 2.x. Download it from https://www.sfml-dev.org/download.php
